@@ -1,0 +1,46 @@
+.content__container {
+  padding: 100px 150px 99px 85px;
+  margin-top: 168px;
+  background: #2c343e;
+  border-radius: 10px;
+  margin-bottom: 168px;
+  .content__line {
+    margin-bottom: 67px;
+    width: 760px;
+    height: 1px;
+    background-color: #fdd6ba;
+    @include flex;
+    justify-content: space-between;
+  }
+  .content__element {
+    border: 2px solid #0e8784;
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .content__list {
+    @include flex;
+    justify-content: space-between;
+  }
+  .content__item {
+    width: 285px;
+  }
+  .content__title {
+    @include title-texts;
+    color: #fdd6ba;
+    margin-bottom: 38px;
+  }
+  .content__title2 {
+    @include title-texts;
+    font-size: 32px;
+    line-height: 36px;
+    color: #fefcf7;
+    margin-bottom: 42px;
+  }
+  .content__text {
+    @include texts;
+  }
+  color: #fefcf7;
+}

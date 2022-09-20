@@ -1,0 +1,133 @@
+.content-2__container {
+  display: flex;
+  justify-content: space-between;
+  .content-2__list {
+    width: 263px;
+  }
+  .content-2__item:not(:last-child) {
+    border-bottom: 2px solid black;
+  }
+  .content-2__item {
+    @include flex;
+    cursor: pointer;
+    &:hover {
+      border-color: #83888f;
+      color: #83888f;
+    }
+    padding: 24px 0px;
+    .item__number {
+      padding-right: 26px;
+      &:hover {
+        color: #83888f;
+      }
+      @include content-2__text;
+    }
+    .item__text {
+      @include content-2__text;
+      &:hover {
+        color: #83888f;
+      }
+    }
+  }
+  .box__title {
+    @include title-texts;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888f;
+    padding-right: 80px;
+    position: relative;
+  }
+  .box__title::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/vector.svg");
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 12px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 0;
+  }
+  .box__card {
+    @include flex;
+    justify-content: space-between;
+    margin-top: 56px;
+    margin-bottom: 88px;
+  }
+  .card__item {
+    padding: 32px 101px 84px 28px;
+    border-radius: 8px;
+    background-color: #f4f1eb;
+    width: 228px;
+    &:hover {
+      color: #333d4b;
+      background-color: #fdd6ba;
+    }
+  }
+  .card__title {
+    @include content-2__text;
+    margin-bottom: 24px;
+  }
+  .card__texts {
+    width: 173px;
+    .card__text {
+      @include texts;
+    }
+  }
+  .yashilga {
+    @include yashil;
+    color: white;
+  }
+  .yashilga2 {
+    color: white;
+  }
+  .yashilga:hover .yashilga2 {
+    color: #333d4b;
+  }
+  .card__title-texts {
+    width: 175px;
+  }
+  .box__banner {
+    background: #2c343e;
+    border-radius: 10px;
+    color: white;
+    padding: 27px 0px 27px 64px;
+    .banner__title {
+      opacity: 0.5;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .banner__text {
+      @include content-2__text;
+      color: white;
+    }
+    .banner__texts {
+      width: 602px;
+    }
+    .banner__span {
+      color: #0e8784;
+    }
+  }
+  .btn {
+    margin-top: 40px;
+    text-align: right;
+    margin-bottom: 168px;
+  }
+  .box__btn {
+    padding: 16px 32px;
+    background-color: #0e8784;
+    border-radius: 6px;
+    display: inline-block;
+    color: #fefcf7;
+    &:hover {
+      background-color: #66d2cf;
+    }
+  }
+}

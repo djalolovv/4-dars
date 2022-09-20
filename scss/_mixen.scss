@@ -1,0 +1,33 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+@mixin hover-color {
+  color: #333d4b;
+}
+@mixin title-texts {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+}
+@mixin texts {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.8;
+}
+@mixin content-2__text {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333d4b;
+}
+@mixin yashil {
+  background-color: #0e8784;
+}

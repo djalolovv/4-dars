@@ -1,0 +1,19 @@
+.hero__container {
+  margin-top: 43px;
+  padding: 134px 0px 134px 85px;
+  height: 450px;
+  border-radius: 10px;
+  background-image: url("../../img/create__background.png");
+  background-repeat: no-repeat;
+  .hero__title {
+    @include title-texts;
+    color: #fefcf7;
+  }
+  .hero__texts {
+    width: 445px;
+  }
+  .hero__text {
+    @include texts;
+    color: #fefcf7;
+  }
+}

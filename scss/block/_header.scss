@@ -1,0 +1,22 @@
+.header-container {
+  margin-top: 44px;
+  @include flex;
+  justify-content: space-between;
+  .header__list {
+    @include flex;
+  }
+  .header__link {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888f;
+    margin-left: 40px;
+    &:hover {
+      @include hover-color;
+    }
+  }
+}
